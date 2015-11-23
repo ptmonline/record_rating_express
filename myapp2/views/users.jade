@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1(class="lead")= titleAlbum
+  ul(class="list-unstyled")
+    - for (var index in data) 
+      li= index + ' : ' + data[index]
+  a(class="btn btn-default" href='/') back
