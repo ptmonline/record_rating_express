@@ -8,7 +8,6 @@ exports.checkString = function(titleAlbum, titleArtist, cb) {
 	function checkcheck(titleAlbum, titleArtist){
 	var finishstring = titleAlbum + "_(" + titleArtist+"_album)"
 	count;
-    // if(titleArtist == undefined || titleArtist == 'undefined' || titleArtist ==null ){
     if(count == 1){
       finishString = titleAlbum + '_(album)';
     }else if(count == 2){
@@ -17,7 +16,6 @@ exports.checkString = function(titleAlbum, titleArtist, cb) {
       console.log('sorry! no match found');
       firstHeader = 'Sorry no criteria found!'
       cb(null, 'Sorry!')
-      // res.render('users', { titleAlbum: titleArtist});
       return false;
     }else{
       finishString = titleAlbum + '_(' + titleArtist +'_album)';
